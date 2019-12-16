@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8c100bdb-63c0-4858-9ced-8785631cc93a</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Power Diary</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback" />
+    <Reference Include="System.Drawing" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Global.vb" />
+    <Compile Include="Power_Diary\My\MyApplication.vb" />
+    <Compile Include="Power_Diary\My\MyComputer.vb" />
+    <Compile Include="Power_Diary\My\MyProject.vb" />
+    <Compile Include="Power_Diary\About.vb" />
+    <Compile Include="Power_Diary\Cryptography.vb" />
+    <Compile Include="Power_Diary\DiaryInfo.vb" />
+    <Compile Include="Power_Diary\DiarySettings.vb" />
+    <Compile Include="Power_Diary\DisplayPage.vb" />
+    <Compile Include="Power_Diary\IOSettings.vb" />
+    <Compile Include="Power_Diary\Main.vb" />
+    <Compile Include="Power_Diary\My\Resources\Resources.vb" />
+    <Compile Include="Power_Diary\My\MySettings.vb" />
+    <Compile Include="Power_Diary\NewDiary.vb" />
+    <Compile Include="Power_Diary\NewPage.vb" />
+    <Compile Include="Power_Diary\Open.vb" />
+    <Compile Include="Power_Diary\PageInfo.vb" />
+    <Compile Include="Power_Diary\PowerProgressbar.vb" />
+    <Compile Include="Power_Diary\Record.vb" />
+    <Compile Include="Power_Diary\Settings.vb" />
+    <Compile Include="Power_Diary\SplashScreen.vb" />
+    <Compile Include="Power_Diary\Updates.vb" />
+    <EmbeddedResource Include="Power_Diary.Settings.resources" />
+    <EmbeddedResource Include="Power_Diary.DiarySettings.resources" />
+    <EmbeddedResource Include="Power_Diary.Cryptography.resources" />
+    <EmbeddedResource Include="Power_Diary.DiaryInfo.resources" />
+    <EmbeddedResource Include="Power_Diary.Resources.resources" />
+    <EmbeddedResource Include="Power_Diary.PowerProgressbar.resources" />
+    <EmbeddedResource Include="Power_Diary.About.resources" />
+    <EmbeddedResource Include="Power_Diary.NewPage.resources" />
+    <EmbeddedResource Include="Power_Diary.PageInfo.resources" />
+    <EmbeddedResource Include="Power_Diary.NewDiary.resources" />
+    <EmbeddedResource Include="Power_Diary.DisplayPage.resources" />
+    <EmbeddedResource Include="Power_Diary.SplashScreen.resources" />
+    <EmbeddedResource Include="Power_Diary.IOSettings.resources" />
+    <EmbeddedResource Include="Power_Diary.Record.resources" />
+    <EmbeddedResource Include="Power_Diary.Main.resources" />
+    <EmbeddedResource Include="Power_Diary.Open.resources" />
+    <EmbeddedResource Include="Power_Diary.Updates.resources" />
+  </ItemGroup>
+</Project>
